@@ -50,7 +50,6 @@ li{
     background-color: var(--blue-btn);
     color: var(--wt);
     text-decoration: none;
-    /* padding: 7px 12px; */
     padding: 1em;
 }
 h2{
@@ -60,6 +59,12 @@ h2{
     margin: 50px 0;
     width: calc((100% - 100px) / 3);
     border: 1px solid var(--lightgrey);
+}
+h3{
+    font-size: 20px;
+}
+.f-start{
+    align-items: flex-start;
 }
 /* specific selection  */
 
@@ -149,7 +154,6 @@ input, label{
 
 .flex-col h3{
     margin: 35px 0 25px;
-    font-size: 20px;
 }
 .flex-col .price{
     margin-bottom: 15px;
@@ -189,10 +193,7 @@ h5{
 .bot-cell{
     border: 1px solid var(--lightgrey);
 }
-.team h3{
-    /* margin: 35px 0 25px; */
-    font-size: 20px;
-}
+
 .team{
     padding: 25px;
     font-size: 12px;
@@ -201,6 +202,24 @@ h5{
     margin: 20px 0 55px;
     font-weight: bold;
 }
-.enterprise{
-    align-items: flex-start;
+/* section partner */
+.partner img{
+    width: 70%;
+}
+.pt-txt{
+    width: 25%;
+    font-size: 14px;
+}
+.pt-txt h3{
+    line-height: 30px;
+    margin: 20px 0;
+}
+.pt-txt p{
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+.special{
+    border: 1px solid var(--blk);
+    background-color: var(--wt);
+    color: var(--blk);
 }
