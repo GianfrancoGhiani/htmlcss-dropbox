@@ -11,6 +11,7 @@
     --red: #d5001f;
     --deepblue: #0d2481;
     --yellow: #ffd830;
+    --lightgrey: lightgrey;
 }
 *{
     margin:0;
@@ -26,6 +27,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .container{
     max-width: 1200px;
@@ -46,9 +53,18 @@ li{
     /* padding: 7px 12px; */
     padding: 1em;
 }
-
+h2{
+    font-size: 28px;
+}
+.cntr-col{
+    margin: 50px 0;
+    width: calc((100% - 100px) / 3);
+    border: 1px solid var(--lightgrey);
+}
 /* specific selection  */
 
+
+/* top-section */
 header nav{
     position:fixed;
     width:100%;
@@ -58,6 +74,9 @@ header nav{
     z-index:1000;
     font-size: 13px;
     background-color: var(--wt);
+}
+.bg-heavenly{
+    background-color: var(--heavenly-bg);
 }
 h1{
     font-size: 80px;
@@ -90,6 +109,74 @@ h1{
 .li-space li{
     margin: 20px;
 }
-.bg-heavenly{
-    background-color: var(--heavenly-bg);
+.hero{
+    margin-bottom: 150px;
+}
+
+/* section prices-n-planes */
+.stretch{
+    align-items: stretch;
+}
+.flex-col ul{
+    margin-bottom: 27px;
+    font-size: 12px;
+}
+.planes h2{
+    margin: 70px 0;
+}
+.checkbox{
+    margin-right: 40px;
+    font-size: 12px;
+}
+input, label{
+    line-height: 20px;
+    vertical-align: middle;
+}
+.suggest{
+    text-align: center;
+    padding: 0.7em;
+    border-bottom: 1px solid var(--lightgrey);
+}
+.flex-col{
+    border-top: 0;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.flex-col h3{
+    margin: 35px 0 25px;
+    font-size: 20px;
+}
+.flex-col .price{
+    margin-bottom: 15px;
+}
+.grey-txt{
+    opacity: 0.7;
+}
+.scnd, .frth{
+    margin-left: 10px;
+}
+.scnd li{
+    margin-bottom: 25px;
+}
+.trd li{
+    margin-bottom: 35px;
+}
+.br-line{
+    width: 50px;
+    border: 1px solid var(--lightgrey);
+    margin-bottom: 40px;
+}
+h5{
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+.frth li{
+    margin-bottom: 25px;
+}
+.li-dot{
+    font-size: 14px;
+}
+.check{
+    color: var(--blue-btn);
 }
