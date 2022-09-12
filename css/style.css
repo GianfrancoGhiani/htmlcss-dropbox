@@ -135,7 +135,11 @@ input, label{
 .suggest{
     text-align: center;
     padding: 0.7em;
+    font-size: 15px;
     border-bottom: 1px solid var(--lightgrey);
+}
+.suggest i{
+    font-size: 13px;
 }
 .flex-col{
     border-top: 0;
@@ -149,6 +153,8 @@ input, label{
 }
 .flex-col .price{
     margin-bottom: 15px;
+    font-weight: bold;
+
 }
 .grey-txt{
     opacity: 0.7;
@@ -179,4 +185,22 @@ h5{
 }
 .check{
     color: var(--blue-btn);
+}
+.bot-cell{
+    border: 1px solid var(--lightgrey);
+}
+.team h3{
+    /* margin: 35px 0 25px; */
+    font-size: 20px;
+}
+.team{
+    padding: 25px;
+    font-size: 12px;
+}
+.team .price{
+    margin: 20px 0 55px;
+    font-weight: bold;
+}
+.enterprise{
+    align-items: flex-start;
 }
