@@ -223,3 +223,17 @@ h5{
     background-color: var(--wt);
     color: var(--blk);
 }
+/* third section */
+.card{
+    margin-top: 20px;
+}
+.wrapper{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    width: calc((100% - 90px) / 3);
+    /* width: 330px; */
+    padding: 0;
+}
+.wrapper img{
+    width: 100%;
+}
