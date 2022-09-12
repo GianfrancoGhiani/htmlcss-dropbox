@@ -1,3 +1,16 @@
+/* general */
+:root{
+    --blue-btn: #0061ff;
+    --heavenly-bg: #b4d0e7;
+    --blk: black;
+    --lightgreen: #a2d39b;
+    --bordeaux: #61082b;
+    --lighblue: #0093ce;
+    --red-orange: #ff1c1c;
+    --red: #d5001f;
+    --deepblue: #0d2481;
+    --yellow: #ffd830;
+}
 *{
     margin:0;
     padding:0;
