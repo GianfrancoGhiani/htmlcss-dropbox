@@ -119,6 +119,38 @@ h1{
 }
 
 /* section prices-n-planes */
+.radio-wrap{
+    position: relative;
+}
+.radio-wrap input{
+    opacity: 0;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+label{
+    margin-left: 20px;
+}
+label:hover{
+    cursor: pointer;
+}
+.rad-check{
+    position: absolute;
+    left:0;
+    top: 0;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 1px solid var(--lightgrey);
+    border-radius: 50%;
+}
+.rad-check:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 3px 2px var(--lightgrey);
+}
+.radio-wrap input:checked ~ .rad-check{
+    border: 4px solid var(--blue-btn);
+}
 .stretch{
     align-items: stretch;
 }
