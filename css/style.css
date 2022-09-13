@@ -320,6 +320,7 @@ h5{
     height: calc((100vw - 17px) / 3);
     width: calc((100vw - 17px) / 3);
     background-color: #f5f5f5;
+    overflow-y: auto;
 }
 .logos{
     width: calc(100% / 2);
@@ -336,9 +337,12 @@ h5{
 }
 .dsg-wrapper{
     width: 80%;
-    height: 100%;
     margin: 10% auto 0;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+}
+.dsg-wrapper .br-line{
+    margin-top: 40px;
+    width: 80px;
 }
 .designit{
     height: 100px;
@@ -364,3 +368,53 @@ h5{
     background-color: var(--wt);
     color: var(--blk);
 }
+/* seventh section / Q&A */
+#qna-title{
+    margin: 70px 0;
+}
+.bord{
+    border-top: 1px solid var(--lightgrey);
+    border-bottom: 1px solid var(--lightgrey);
+}
+.qna{
+    padding: 30px 0;
+    cursor: pointer;
+}
+.quest{
+    font-size: 13px;
+    font-weight: bold;
+}
+.answ{
+    display: none;
+}
+.qna:active .answ{
+    display: block;
+    padding: 20px 0 0 20px;
+    width: 80%;
+    font-size: 13px;
+}
+
+/* footer */
+ .foot-wrapper{
+    background-color: var(--blk);
+    color: var(--wt);
+    font-size: 13px;
+ }
+ .lists{
+    padding-bottom: 100px;
+ }
+ .lists h4{
+    padding-bottom: 20px;
+    font-size: 18px;
+ }
+ .lists ul{
+    line-height: 30px;
+ }
+ .foot-wrapper .br-line{
+    width: 100px;
+ }
+ .lang{
+    width: 80px;
+    padding-bottom: 40px;
+    opacity: 0.7;
+ }
