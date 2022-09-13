@@ -409,12 +409,18 @@ h5{
 .answ{
     display: none;
 }
-.qna:active .answ{
+.qna input{
+    display: none;
+}
+ .qna input:checked ~ .answ{
     display: block;
     padding: 20px 0 0 20px;
     width: 80%;
     font-size: 13px;
-}
+ }
+ .qna label{
+    margin: 0;
+ }
 
 /* footer */
  .foot-wrapper{
