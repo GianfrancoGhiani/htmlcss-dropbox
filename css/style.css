@@ -110,10 +110,34 @@ header nav{
 }
 .select{
     line-height: 78px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
+.subnav{
+    width: 200px;
+    display: none;
+    z-index: 1200;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: #f5f5f5;
+}
+.subnav li{
+    line-height: 30px;
+    border-bottom: 1px dashed var(--heavenly-bg);
+}
+.subnav li:hover{
+    box-shadow: inset 0px -4px 10px 2px var(--lightgrey)
+}
+.select:hover .subnav{
+    display: block;
+}
+
 .select:hover{
     padding-top: 2px;
     border-bottom: 2px solid var(--blk);
+    box-shadow: inset 0px 0px 12px 4px var(--lightgrey);
 }
 .bg-heavenly{
     background-color: var(--heavenly-bg);
@@ -412,14 +436,22 @@ h5{
 .qna input{
     display: none;
 }
+.qna i{
+    transition: transform 500ms ease-in-out;
+ }
  .qna input:checked ~ .answ{
     display: block;
     padding: 20px 0 0 20px;
     width: 80%;
     font-size: 13px;
- }
- .qna label{
+    visibility: v;
+}
+.qna label{
     margin: 0;
+ }
+
+:checked + label i{
+    transform: rotate(180deg);
  }
 
 /* footer */
