@@ -438,7 +438,7 @@ h5{
     display: none;
 }
 .qna i{
-    transition: transform 500ms ease-in-out;
+    transition: transform 300ms ease-in-out;
  }
  .qna input:checked ~ .answ{
     display: block;
